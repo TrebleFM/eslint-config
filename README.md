@@ -18,20 +18,20 @@ The browser config additionally requires:
 `.eslintrc`
 ```json
 {
-  "extends": "treblefm"
+  "extends": "@treblefm"
 }
 ```
 
 `.eslintrc` for Mocha tests
 ```json
 {
-  "extends": "treblefm/test"
+  "extends": "@treblefm/eslint-config/test"
 }
 ```
 
 `.eslintrc` for browsers
 ```json
 {
-  "extends": "treblefm/browser"
+  "extends": "@treblefm/eslint-config/browser"
 }
 ```
