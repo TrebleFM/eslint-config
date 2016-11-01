@@ -1,5 +1,5 @@
 module.exports = {
-    "extends": "treblefm",
+    "extends": "@treblefm",
     "env": {
         "mocha": true
     }

@@ -2,6 +2,10 @@
   "name": "@treblefm/eslint-config",
   "version": "1.0.0",
   "description": "Shared ESLint config for Treble.fm",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/treblefm/eslint-config.git"
+},
   "license": "MIT",
   "engines": {
     "node": ">=4"
