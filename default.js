@@ -7,13 +7,13 @@ module.exports = {
         "sourceType": "module"
     },
     "extends": [
-        "@treblefm/rules/eslint/best-practices",
-        "@treblefm/rules/eslint/errors",
-        "@treblefm/rules/eslint/es6",
-        "@treblefm/rules/eslint/node",
-        "@treblefm/rules/eslint/strict",
-        "@treblefm/rules/eslint/style",
-        "@treblefm/rules/eslint/variables",
-        "@treblefm/rules/babel"
+        "@treblefm/eslint-config/rules/eslint/best-practices",
+        "@treblefm/eslint-config/rules/eslint/errors",
+        "@treblefm/eslint-config/rules/eslint/es6",
+        "@treblefm/eslint-config/rules/eslint/node",
+        "@treblefm/eslint-config/rules/eslint/strict",
+        "@treblefm/eslint-config/rules/eslint/style",
+        "@treblefm/eslint-config/rules/eslint/variables",
+        "@treblefm/eslint-config/rules/babel"
     ]
 };
