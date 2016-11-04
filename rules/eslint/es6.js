@@ -3,7 +3,7 @@ module.exports = {
         "es6": true
     },
     "parserOptions": {
-        "ecmaVersion": 6
+        "ecmaVersion": 8
     },
     "rules": {
         // require braces in arrow function body

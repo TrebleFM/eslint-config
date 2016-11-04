@@ -1,3 +1,4 @@
+// Rules from eslint-plugin-babel
 module.exports = {
     "rules": {
         // Handles async/await functions correctly
@@ -11,12 +12,12 @@ module.exports = {
         // Doesn't fail when using object spread (...obj)
         "babel/object-shorthand": 0,
         // Handles async functions correctly
-        "babel/arrow-parens": 1,
+        "babel/arrow-parens": 2,
         // Guard against awaiting async functions inside of a loop
         "babel/no-await-in-loop": 0,
         // Require a particular separator between properties in Flow object types
         "babel/flow-object-type": 0,
         // Require or forbid trailing commas for function paramater lists
-        "babel/func-params-comma-dangle": 0
+        "babel/func-params-comma-dangle": 2
     }
 };

@@ -5,15 +5,15 @@ module.exports = {
         // disallow or enforce spaces inside of single line blocks
         "block-spacing": 0,
         // enforce one true brace style
-        "brace-style": [2, "1tbs"],
+        "brace-style": 2,
         // require camel case names
         "camelcase": 1,
         // disallow trailing commas in object literals
-        "comma-dangle": 0,
+        "comma-dangle": 2,
         // enforce spacing before and after comma
         "comma-spacing": 2,
         // enforce one true comma style
-        "comma-style": 1,
+        "comma-style": 2,
         // require or disallow padding inside computed properties
         "computed-property-spacing": 0,
         // enforces consistent naming when capturing the current execution context
@@ -53,7 +53,7 @@ module.exports = {
         // specify the maximum depth that blocks can be nested
         "max-depth": [1, 4],
         // specify the maximum length of a line in your program
-        "max-len": [2, { "code": 120, "tabWidth": 4, "ignoreComments": true, "ignoreUrls": true}],
+        "max-len": [1, { "code": 120, "tabWidth": 4, "ignoreComments": true, "ignoreUrls": true}],
         // enforce a maximum number of lines per file
         "max-lines": 0,
         // specify the maximum depth callbacks can be nested
@@ -95,7 +95,7 @@ module.exports = {
         // disallow negated conditions
         "no-negated-condition": 0,
         // disallow nested ternary expressions
-        "no-nested-ternary": 0,
+        "no-nested-ternary": 2,
         // disallow use of the Object constructor
         "no-new-object": 0,
         // disallow use of unary operators, ++ and --

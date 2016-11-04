@@ -9,7 +9,7 @@ module.exports = {
         // enforce that class methods utilize this
         "class-methods-use-this": 0,
         // specify the maximum cyclomatic complexity allowed in a program
-        "complexity": [0, 11],
+        "complexity": 1,
         // require return statements to either always or never specify values
         "consistent-return": 1,
         // specify curly brace conventions for all control statements
@@ -19,7 +19,7 @@ module.exports = {
         // enforces consistent newlines before or after dots
         "dot-location": [1, "property"],
         // encourages use of dot notation whenever possible
-        "dot-notation": [1, { "allowKeywords": true }],
+        "dot-notation": [1, {"allowKeywords": true}],
         // require the use of === and !==
         "eqeqeq": 2,
         // make sure for-in loops have an if statement
@@ -69,7 +69,7 @@ module.exports = {
         // disallow creation of functions within loops
         "no-loop-func": 1,
         // disallow the use of magic numbers
-        "no-magic-numbers": [1, {"ignore": [-1, 0, 1, 2, 24, 60, 100, 1000]}],
+        "no-magic-numbers": [1, {"ignore": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 24, 60, 100, 365, 1000, 1024]}],
         // disallow use of multiple spaces
         "no-multi-spaces": 1,
         // disallow use of multiline strings
@@ -80,8 +80,7 @@ module.exports = {
         "no-new-wrappers": 0,
         // disallow use of new operator when not part of the assignment or comparison
         "no-new": 0,
-        // disallow use of octal escape sequences in string literals, such as
-        // var foo = 'Copyright \251';
+        // disallow use of octal escape sequences in string literals, such as:  var foo = 'Copyright \251';
         "no-octal-escape": 0,
         // disallow use of (old style) octal literals
         "no-octal": 2,
