@@ -2,7 +2,7 @@
 module.exports = {
     "rules": {
         // Enforce either module.exports or exports
-        "exports-style": 2,
+        "node/exports-style": 2,
         // Disallow deprecated API
         "node/no-deprecated-api": 2,
         // Disallow import declarations for files that don't exist

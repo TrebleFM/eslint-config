@@ -1,19 +1,21 @@
 module.exports = {
     "parser": "babel-eslint",
     "plugins": [
-        "babel"
+        "babel",
+        "node"
     ],
     "parserOptions": {
         "sourceType": "module"
     },
     "extends": [
-        "@treblefm/eslint-config/rules/eslint/best-practices",
-        "@treblefm/eslint-config/rules/eslint/errors",
-        "@treblefm/eslint-config/rules/eslint/es6",
-        "@treblefm/eslint-config/rules/eslint/node",
-        "@treblefm/eslint-config/rules/eslint/strict",
-        "@treblefm/eslint-config/rules/eslint/style",
-        "@treblefm/eslint-config/rules/eslint/variables",
-        "@treblefm/eslint-config/rules/babel"
+        "./rules/eslint/best-practices.js",
+        "./rules/eslint/errors.js",
+        "./rules/eslint/es6.js",
+        "./rules/eslint/node.js",
+        "./rules/eslint/strict.js",
+        "./rules/eslint/style.js",
+        "./rules/eslint/variables.js",
+        "./rules/plugins/babel.js",
+        "./rules/plugins/node.js"
     ]
 };
