@@ -9,7 +9,7 @@ $ npm install @treblefm/eslint-config --save-dev
 You must also `npm install` the following peer dependencies:
 - `eslint@3.x` (obviously)
 - `babel-eslint@7.x`
-- `eslint-plugin-babel@3.x`
+- `eslint-plugin-babel@4.x`
 - `eslint-plugin-node@3.x`
 
 The browser config additionally requires:
