@@ -1,7 +1,7 @@
 module.exports = {
     "rules": {
         // enforce spacing inside array brackets
-        "array-bracket-spacing": 0, // NOTE - DO NOT TOUCH. Use rule in babel.js
+        "array-bracket-spacing": 0,
         // disallow or enforce spaces inside of single line blocks
         "block-spacing": 0,
         // enforce one true brace style

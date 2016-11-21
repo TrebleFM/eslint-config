@@ -59,7 +59,7 @@ module.exports = {
         // disallow use of eval()-like methods
         "no-implied-eval": 2,
         // disallow this keywords outside of classes or class-like objects
-        "no-invalid-this": 0,
+        "no-invalid-this": 0, // NOTE - DO NOT TOUCH. Use rule in babel.js
         // disallow usage of __iterator__ property
         "no-iterator": 0,
         // disallow use of labels for anything other then loops and switches
@@ -94,6 +94,8 @@ module.exports = {
         "no-restricted-properties": 0,
         // disallow use of assignment in return statement
         "no-return-assign": 0,
+        // disallow unnecessary return await
+        "no-return-await": 2,
         // disallow use of `javascript:` urls.
         "no-script-url": 1,
         // disallow comparisons where both sides are exactly the same
