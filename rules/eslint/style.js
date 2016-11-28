@@ -8,6 +8,8 @@ module.exports = {
         "brace-style": 2,
         // require camel case names
         "camelcase": 1,
+        // enforce or disallow capitalization of the first letter of a comment
+        "capitalized-comments": 0,
         // disallow trailing commas in object literals
         "comma-dangle": 2,
         // enforce spacing before and after comma
