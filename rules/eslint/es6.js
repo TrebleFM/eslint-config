@@ -25,7 +25,7 @@ module.exports = {
         // disallow duplicate name in class members
         "no-dupe-class-members": 2,
         // disallow duplicate module imports
-        "no-duplicate-imports": 0,
+        "no-duplicate-imports": 2,
         // disallow new operators with the Symbol object
         "no-new-symbol": 2,
         // disallow specified modules when loaded by import
@@ -35,9 +35,9 @@ module.exports = {
         // disallow unnecessary computed property keys in object literals
         "no-useless-computed-key": 0,
         // disallow unnecessary constructors
-        "no-useless-constructor": 0,
+        "no-useless-constructor": 1,
         // disallow renaming import, export, and destructured assignments to the same name
-        "no-useless-rename": 0,
+        "no-useless-rename": 1,
         // require let or const instead of var
         "no-var": 0,
         // require method and property shorthand syntax for object literals
@@ -59,7 +59,7 @@ module.exports = {
         // enforce spacing between rest and spread operators and their expressions
         "rest-spread-spacing": 0,
         // enforce sorted import declarations within modules
-        "sort-imports": 0,
+        "sort-imports": 1,
         // require symbol descriptions
         "symbol-description": 1,
         // require or disallow spacing around embedded expressions of template strings
