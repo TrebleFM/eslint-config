@@ -2,6 +2,7 @@ module.exports = {
     "parser": "babel-eslint",
     "plugins": [
         "babel",
+        "flowtype",
         "node"
     ],
     "parserOptions": {
