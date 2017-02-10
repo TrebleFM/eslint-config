@@ -92,6 +92,8 @@ module.exports = {
         "no-mixed-operators": 2,
         // disallow mixed spaces and tabs for indentation
         "no-mixed-spaces-and-tabs": [2, false],
+        // disallow use of chained assignment expressions
+        "no-multi-assign": 2,
         // disallow multiple empty lines
         "no-multiple-empty-lines": 0,
         // disallow negated conditions
@@ -154,6 +156,8 @@ module.exports = {
         "space-unary-ops": 0,
         // require or disallow a space immediately following the // or /* in a comment
         "spaced-comment": 1,
+        // require or disallow spacing between template tags and their literals
+        "template-tag-spacing": 0,
         // require or disallow Unicode byte order mark (BOM)
         "unicode-bom": 0,
         // require regex literals to be wrapped in parentheses

@@ -14,7 +14,7 @@ You must also `npm install` the following peer dependencies:
 - `eslint-plugin-node@3.x`
 
 The browser config additionally requires:
-- `eslint-plugin-html@1.x`
+- `eslint-plugin-html@2.x`
 
 ### Usage
 `.eslintrc`

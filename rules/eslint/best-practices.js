@@ -124,6 +124,8 @@ module.exports = {
         "no-warning-comments": 0,
         // disallow use of the with statement
         "no-with": 0,
+        // require using Error objects as Promise rejection reasons
+        "prefer-promise-reject-errors": 2,
         // require use of the second argument for parseInt()
         "radix": 0,
         // disallow async functions which have no await expression
