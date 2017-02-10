@@ -11,7 +11,7 @@ You must also `npm install` the following peer dependencies:
 - `babel-eslint@7.x`
 - `eslint-plugin-babel@4.x`
 - `eslint-plugin-flowtype@2.x`
-- `eslint-plugin-node@3.x`
+- `eslint-plugin-node@4.x`
 
 The browser config additionally requires:
 - `eslint-plugin-html@2.x`
