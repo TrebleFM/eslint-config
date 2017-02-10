@@ -155,7 +155,7 @@ module.exports = {
         // Require or disallow spaces before/after unary operators
         "space-unary-ops": 0,
         // require or disallow a space immediately following the // or /* in a comment
-        "spaced-comment": 1,
+        "spaced-comment": [1, "always", {"exceptions": ["/"]}],
         // require or disallow spacing between template tags and their literals
         "template-tag-spacing": 0,
         // require or disallow Unicode byte order mark (BOM)

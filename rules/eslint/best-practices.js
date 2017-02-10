@@ -103,7 +103,7 @@ module.exports = {
         // disallow use of comma operator
         "no-sequences": 0,
         // restrict what can be thrown as an exception
-        "no-throw-literal": 0,
+        "no-throw-literal": 2,
         // disallow unmodified loop conditions
         "no-unmodified-loop-condition": 1,
         // disallow usage of expressions in statement position
