@@ -1,3 +1,5 @@
+const MagicNumbers = require("../magic-numbers");
+
 module.exports = {
     "rules": {
         // enforce getter and setter pairs in objects
@@ -69,7 +71,7 @@ module.exports = {
         // disallow creation of functions within loops
         "no-loop-func": 1,
         // disallow the use of magic numbers
-        "no-magic-numbers": [1, {"ignore": [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 24, 60, 100, 365, 1000, 1024]}],
+        "no-magic-numbers": [1, {"detectObjects": true, "enforceConst": true, "ignore": Array.from(MagicNumbers)}],
         // disallow use of multiple spaces
         "no-multi-spaces": 1,
         // disallow use of multiline strings
