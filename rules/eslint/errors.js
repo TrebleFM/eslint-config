@@ -2,6 +2,8 @@ module.exports = {
     "rules": {
         // disallow await inside of loops
         "no-await-in-loop": 2,
+        // disallow comparing against -0
+        "no-compare-neg-zero": 2,
         // disallow assignment in conditional expressions
         "no-cond-assign": 2,
         // disallow use of console
