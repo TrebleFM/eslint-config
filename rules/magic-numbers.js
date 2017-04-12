@@ -21,7 +21,7 @@ for (let i = 2; i <= 4; i++) {
 }
 
 // Powers of 2; Powers of 2, minus 1 (starting at 16, up to 1024)
-for (let i = 4; i < 10; i++) {
+for (let i = 4; i <= 10; i++) {
     MagicNumbers.add( Math.pow(2, i) ); // 2 ** i
     MagicNumbers.add( Math.pow(2, i) - 1 ); // (2 ** i) - 1
 }
