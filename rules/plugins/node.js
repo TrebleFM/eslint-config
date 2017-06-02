@@ -1,6 +1,10 @@
 // Rules from eslint-plugin-node
 module.exports = {
     "rules": {
+        // Disallow import declarations of extraneous packages
+        "node/no-extraneous-import": 2,
+        // Disallow require() expressions of extraneous packages
+        "node/no-extraneous-require": 2,
         // Enforce either module.exports or exports
         "node/exports-style": 2,
         // Disallow deprecated API

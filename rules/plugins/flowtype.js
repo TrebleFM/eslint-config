@@ -14,6 +14,8 @@ module.exports = {
         "flowtype/no-dupe-keys": 2,
         // disallows use of primitive constructors as types, such as Boolean, Number and String
         "flowtype/no-primitive-constructor-types": 0,
+        // disallows Flow type imports, exports, aliases, and annotations in files missing a valid Flow file declaration (or a @noflow annotation)
+        "flowtype/no-types-missing-file-annotation": 2,
         // warns against weak type annotations any, Object and Function
         "flowtype/no-weak-types": 0,
         // enforces consistent separators between properties in Flow object types
