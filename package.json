@@ -15,12 +15,12 @@
     "test": "eslint '**/*.js'"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.2",
+    "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-flowtype": "^2.30.4",
-    "eslint-plugin-html": "^2.0.1",
-    "eslint-plugin-node": "^4.2.2"
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-node": "^5.0.0"
   },
   "peerDependencies": {
     "babel-eslint": "7.x",
