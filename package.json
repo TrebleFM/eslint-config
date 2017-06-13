@@ -16,10 +16,10 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
+    "eslint": "^4.0.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-flowtype": "^2.34.0",
-    "eslint-plugin-html": "^2.0.3",
+    "eslint-plugin-html": "^3.0.0",
     "eslint-plugin-node": "^5.0.0"
   },
   "peerDependencies": {
@@ -30,6 +30,6 @@
     "eslint-plugin-node": "5.x"
   },
   "optionalDependencies": {
-    "eslint-plugin-html": "2.x"
+    "eslint-plugin-html": "3.x"
   }
 }
