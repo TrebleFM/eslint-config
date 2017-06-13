@@ -1,5 +1,7 @@
 module.exports = {
     "rules": {
+        // enforce “for” loop update clause moving the counter in the right direction
+        "for-direction": 1,
         // disallow await inside of loops
         "no-await-in-loop": 2,
         // disallow comparing against -0

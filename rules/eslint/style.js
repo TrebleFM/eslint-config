@@ -1,7 +1,11 @@
 module.exports = {
     "rules": {
+        // enforce linebreaks after opening and before closing array brackets
+        "array-bracket-newline": 0,
         // enforce spacing inside array brackets
         "array-bracket-spacing": 0,
+        // enforce line breaks after each array element
+        "array-element-newline": 0,
         // disallow or enforce spaces inside of single line blocks
         "block-spacing": 0,
         // enforce one true brace style
@@ -50,8 +54,6 @@ module.exports = {
         "linebreak-style": 0,
         // enforces empty lines around comments
         "lines-around-comment": 0,
-        // require or disallow newlines around directives
-        "lines-around-directive": 1,
         // specify the maximum depth that blocks can be nested
         "max-depth": [1, 4],
         // specify the maximum length of a line in your program
@@ -72,10 +74,6 @@ module.exports = {
         "new-cap": 0, // NOTE - DO NOT TOUCH. Use rule in babel.js
         // disallow the omission of parentheses when invoking a constructor with no arguments
         "new-parens": 0,
-        // allow/disallow an empty newline after var statement
-        "newline-after-var": 0,
-        // require an empty line before return statements
-        "newline-before-return": 0,
         // require a newline after each call in a method chain
         "newline-per-chained-call": 1,
         // disallow use of the Array constructor
@@ -132,6 +130,8 @@ module.exports = {
         "operator-linebreak": 0,
         // enforce padding within blocks
         "padded-blocks": 0,
+        // require or disallow padding lines between statements
+        "padding-line-between-statements": 0,
         // require quotes around object literal property names
         "quote-props": 0,
         // specify whether double or single quotes should be used
@@ -140,6 +140,8 @@ module.exports = {
         "require-jsdoc": 0,
         // enforce spacing before and after semicolons
         "semi-spacing": 2,
+        // enforce location of semicolons
+        "semi-style": 2,
         // require or disallow use of semicolons instead of ASI
         "semi": 2,
         // require object keys to be sorted
@@ -158,6 +160,8 @@ module.exports = {
         "space-unary-ops": 0,
         // require or disallow a space immediately following the // or /* in a comment
         "spaced-comment": [1, "always", {"exceptions": ["/"]}],
+        // enforce spacing around colons of switch statements
+        "switch-colon-spacing": 2,
         // require or disallow spacing between template tags and their literals
         "template-tag-spacing": 0,
         // require or disallow Unicode byte order mark (BOM)
