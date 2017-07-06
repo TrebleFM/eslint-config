@@ -13,23 +13,23 @@ module.exports = {
         // checks for duplicate properties in Object annotations
         "flowtype/no-dupe-keys": 2,
         // disallows use of primitive constructors as types, such as Boolean, Number and String
-        "flowtype/no-primitive-constructor-types": 0,
+        "flowtype/no-primitive-constructor-types": 2,
         // disallows Flow type imports, exports, aliases, and annotations in files missing a valid Flow file declaration (or a @noflow annotation)
         "flowtype/no-types-missing-file-annotation": 2,
         // warns against weak type annotations any, Object and Function
-        "flowtype/no-weak-types": 0,
+        "flowtype/no-weak-types": 1,
         // enforces consistent separators between properties in Flow object types
-        "flowtype/object-type-delimiter": 0,
+        "flowtype/object-type-delimiter": 2,
         // requires that all function parameters have type annotations
-        "flowtype/require-parameter-type": 0,
+        "flowtype/require-parameter-type": 1,
         // requires that functions have return type annotation
-        "flowtype/require-return-type": 0,
+        "flowtype/require-return-type": 1,
         // validates Flow file annotations
-        "flowtype/require-valid-file-annotation": 0,
+        "flowtype/require-valid-file-annotation": 2,
         // requires that all variable declarators have type annotations
         "flowtype/require-variable-type": 0,
         // enforces consistent use of semicolons after type aliases
-        "flowtype/semi": 0,
+        "flowtype/semi": 2,
         // enforces sorting of Object annotations
         "flowtype/sort-keys": 0,
         // enforces consistent spacing after the type annotation colon
@@ -43,9 +43,7 @@ module.exports = {
         // enforces consistent spacing around union and intersection type separators (| and &)
         "flowtype/union-intersection-spacing": 2,
         // marks Flow type alias declarations as used
-        "flowtype/use-flow-type": 1,
-        // checks for simple Flow syntax errors
-        "flowtype/valid-syntax": 1
+        "flowtype/use-flow-type": 1
     },
     "settings": {
         "flowtype": {
