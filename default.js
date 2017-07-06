@@ -17,6 +17,7 @@ module.exports = {
         "./rules/eslint/style.js",
         "./rules/eslint/variables.js",
         "./rules/plugins/babel.js",
+        "./rules/plugins/flowtype.js",
         "./rules/plugins/node.js"
     ]
 };
