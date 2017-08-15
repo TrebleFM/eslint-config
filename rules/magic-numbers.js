@@ -15,7 +15,12 @@ for (let i = -1; i <= 10; i++) {
     MagicNumbers.add(i);
 }
 
-// Multiples of 10 (100, 1000, 10000)
+// Multiples of 10 (20 to 90)
+for (let i = 2; i <= 9; i++) {
+    MagicNumbers.add( 10 * i );
+}
+
+// Powers of 10 (100, 1000, 10000)
 for (let i = 2; i <= 4; i++) {
     MagicNumbers.add( Math.pow(10, i) ); // 10 ** i
 }
@@ -27,7 +32,7 @@ for (let i = 4; i <= 10; i++) {
 }
 
 // Time related
-for (let i of [12, 24, 30, 60, 365]) {
+for (let i of [12, 15, 24, 30, 60, 365]) {
     MagicNumbers.add(i);
 }
 
@@ -43,3 +48,4 @@ for (let i of [11, 13, 17, 19, 23]) {
 
 // Random other numbers
 MagicNumbers.add(120); // Line length
+MagicNumbers.add(25);
