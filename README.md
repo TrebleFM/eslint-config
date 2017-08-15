@@ -1,7 +1,9 @@
 # @treblefm/eslint-config
+
 Shared ESLint config for Treble.fm
 
-### Install
+## Install
+
 ```
 $ npm install @treblefm/eslint-config --save-dev
 ```
@@ -13,41 +15,90 @@ You must also `npm install` the following peer dependencies:
 - `eslint-plugin-flowtype@2.x`
 - `eslint-plugin-node@5.x`
 
-The browser config additionally requires:
+The browser configs additionally require:
 - `eslint-plugin-html@3.x`
 
-### Usage
-`.eslintrc`
+The React configs additionally require:
+- `eslint-plugin-react@7.x`
+- `eslint-plugin-react-native@3.x`
+
+The TypeScript config additionally requires:
+- `typescript-eslint-parser@5.x`
+
+## Usage
+
+`.eslintrc` for plain ol' Node.js
 ```json
 {
   "extends": "@treblefm"
 }
 ```
 
-`.eslintrc` for Mocha tests
+For Mocha tests
 ```json
 {
   "extends": "@treblefm/eslint-config/test"
 }
 ```
 
-`.eslintrc` for browsers
+### Browsers
+
+For browsers
 ```json
 {
   "extends": "@treblefm/eslint-config/browser"
 }
 ```
 
-`.eslintrc` for browsers via Babel
+For browsers via Babel
 ```json
 {
   "extends": "@treblefm/eslint-config/browser-babel"
 }
 ```
 
-`.eslintrc` for TypeScript ([experimental](https://github.com/eslint/typescript-eslint-parser))
+### React
+
+For server-side React
+```json
+{
+  "extends": "@treblefm/eslint-config/react"
+}
+```
+
+For client-side React
+```json
+{
+  "extends": "@treblefm/eslint-config/browser-react"
+}
+```
+
+### TypeScript ([experimental](https://github.com/eslint/typescript-eslint-parser))
+
+For TypeScript
 ```json
 {
   "extends": "@treblefm/eslint-config/typescript"
+}
+```
+
+For browsers via TypeScript
+```json
+{
+  "extends": "@treblefm/eslint-config/typescript-browser"
+}
+```
+
+For server-side React via TypeScript
+```json
+{
+  "extends": "@treblefm/eslint-config/typescript-react"
+}
+```
+
+For client-side React via TypeScript
+```json
+{
+  "extends": "@treblefm/eslint-config/typescript-browser-react"
 }
 ```
