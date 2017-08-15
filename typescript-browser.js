@@ -5,7 +5,9 @@ module.exports = {
         "jquery": true
     },
     "extends": [
-        "./typescript.js",
-        "./rules/plugins/html.js"
+        "./baseline.js",
+        "./rules/eslint/es6.js",
+        "./rules/plugins/html.js",
+        "./rules/plugins/typescript.js"
     ]
 };
