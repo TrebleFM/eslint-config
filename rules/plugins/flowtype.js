@@ -1,6 +1,6 @@
-// Rules from eslint-plugin-node
+// Rules from eslint-plugin-flowtype
 module.exports = {
-    "parser": "babel-eslint",
+    "plugins": ["flowtype"],
     "rules": {
         // enforces a particular style for boolean type annotations
         "flowtype/boolean-style": 2,

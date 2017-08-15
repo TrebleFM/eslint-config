@@ -1,6 +1,6 @@
 module.exports = {
-    "extends": "@treblefm",
     "env": {
         "mocha": true
-    }
+    },
+    "extends": "./default.js"
 };

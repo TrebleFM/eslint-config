@@ -1,13 +1,5 @@
 module.exports = {
     "parser": "babel-eslint",
-    "plugins": [
-        "babel",
-        "flowtype",
-        "node"
-    ],
-    "parserOptions": {
-        "sourceType": "module"
-    },
     "extends": [
         "./rules/eslint/best-practices.js",
         "./rules/eslint/errors.js",

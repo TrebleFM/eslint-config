@@ -1,5 +1,6 @@
 // Rules from eslint-plugin-node
 module.exports = {
+    "plugins": ["node"],
     "rules": {
         // Disallow import declarations of extraneous packages
         "node/no-extraneous-import": 2,
