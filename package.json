@@ -21,6 +21,7 @@
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-html": "^3.2.0",
     "eslint-plugin-node": "^5.1.1"
+    "typescript-eslint-parser": "^5.0.1"
   },
   "peerDependencies": {
     "babel-eslint": "7.x",
@@ -31,5 +32,6 @@
   },
   "optionalDependencies": {
     "eslint-plugin-html": "3.x"
+    "typescript-eslint-parser": "5.x"
   }
 }

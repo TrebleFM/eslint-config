@@ -44,3 +44,10 @@ The browser config additionally requires:
   "extends": "@treblefm/eslint-config/browser-babel"
 }
 ```
+
+`.eslintrc` for TypeScript ([experimental](https://github.com/eslint/typescript-eslint-parser))
+```json
+{
+  "extends": "@treblefm/eslint-config/typescript"
+}
+```
