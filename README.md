@@ -25,10 +25,13 @@ The React configs additionally require:
 The TypeScript config additionally requires:
 - `eslint-plugin-typescript@0.5.x`
 - `typescript-eslint-parser@5.x`
+- `typescript@2.4.x`
+
+By default, this config assumes a Node.js project using Babel and Flowtype.
 
 ## Usage
 
-`.eslintrc` for plain ol' Node.js
+`.eslintrc`
 ```json
 {
   "extends": "@treblefm"
@@ -44,7 +47,7 @@ For Mocha tests
 
 ### Browsers
 
-For browsers
+For browsers (ES5)
 ```json
 {
   "extends": "@treblefm/eslint-config/browser"
@@ -67,7 +70,7 @@ For server-side React
 }
 ```
 
-For client-side React
+For client-side React via Babel
 ```json
 {
   "extends": "@treblefm/eslint-config/browser-react"

@@ -19,19 +19,16 @@
     "eslint": "^4.4.1",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-flowtype": "^2.35.0",
-    "eslint-plugin-html": "^3.2.0",
     "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-react": "^7.2.1",
-    "eslint-plugin-react-native": "^3.0.1",
-    "eslint-plugin-typescript": "^0.5.0",
-    "typescript-eslint-parser": "^5.0.1"
+    "typescript": "~2.4.2"
   },
   "peerDependencies": {
     "babel-eslint": "7.x",
     "eslint": "4.x",
     "eslint-plugin-babel": "4.x",
     "eslint-plugin-flowtype": "2.x",
-    "eslint-plugin-node": "5.x"
+    "eslint-plugin-node": "5.x",
+    "typescript": "2.4.x"
   },
   "optionalDependencies": {
     "eslint-plugin-html": "3.x",
