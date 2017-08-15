@@ -37,3 +37,10 @@ The browser config additionally requires:
   "extends": "@treblefm/eslint-config/browser"
 }
 ```
+
+`.eslintrc` for browsers via Babel
+```json
+{
+  "extends": "@treblefm/eslint-config/browser-babel"
+}
+```
