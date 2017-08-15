@@ -1,5 +1,6 @@
 // Rules from eslint-plugin-babel
 module.exports = {
+    "parser": "babel-eslint",
     "plugins": ["babel"],
     "rules": {
         // Ignores capitalized decorators (@Decorator)

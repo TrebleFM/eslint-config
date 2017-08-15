@@ -1,5 +1,4 @@
 module.exports = {
-    "parser": "babel-eslint",
     "extends": [
         "./baseline.js",
         "./rules/eslint/es6.js",
