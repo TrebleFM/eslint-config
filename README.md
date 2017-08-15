@@ -23,6 +23,7 @@ The React configs additionally require:
 - `eslint-plugin-react-native@3.x`
 
 The TypeScript config additionally requires:
+- `eslint-plugin-typescript@0.5.x`
 - `typescript-eslint-parser@5.x`
 
 ## Usage
