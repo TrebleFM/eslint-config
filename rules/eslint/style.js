@@ -69,7 +69,7 @@ module.exports = {
         // specify the maximum number of statement allowed in a function
         "max-statements": 0,
         // enforce newlines between operands of ternary expressions
-        "multiline-ternary": 0,
+        "multiline-ternary": [1, "always-multiline"],
         // require a capital letter for constructors
         "new-cap": 0, // NOTE - DO NOT TOUCH. Use rule in babel.js
         // disallow the omission of parentheses when invoking a constructor with no arguments
