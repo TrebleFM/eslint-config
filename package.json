@@ -1,6 +1,6 @@
 {
   "name": "@treblefm/eslint-config",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Shared ESLint config for Treble.fm",
   "repository": {
     "type": "git",
