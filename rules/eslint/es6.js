@@ -58,7 +58,7 @@ module.exports = {
         // enforce spacing between rest and spread operators and their expressions
         "rest-spread-spacing": 0,
         // enforce sorted import declarations within modules
-        "sort-imports": 1,
+        "sort-imports": 0,
         // require symbol descriptions
         "symbol-description": 1,
         // require or disallow spacing around embedded expressions of template strings
