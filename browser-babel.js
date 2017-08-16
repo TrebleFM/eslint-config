@@ -1,12 +1,7 @@
 module.exports = {
-    "env": {
-        "node": false,
-        "browser": true,
-        "jquery": true
-    },
     "extends": [
         "./baseline.js",
-        "./rules/eslint/es6.js",
+        "./rules/eslint/browser-babel.js",
         "./rules/plugins/babel.js",
         "./rules/plugins/flowtype.js",
         "./rules/plugins/html.js"
