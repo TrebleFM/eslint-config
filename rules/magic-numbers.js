@@ -46,6 +46,11 @@ for (let i of [11, 13, 17, 19, 23]) {
     MagicNumbers.add(i);
 }
 
+// Age related
+for (let i of [13, 18, 21]) {
+    MagicNumbers.add(i);
+}
+
 // Random other numbers
 MagicNumbers.add(120); // Line length
 MagicNumbers.add(25);
