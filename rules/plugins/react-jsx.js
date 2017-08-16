@@ -1,5 +1,10 @@
 // JSX rules from eslint-plugin-react
 module.exports = {
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
     "plugins": ["react"],
     "rules": {
         // Enforce boolean attributes notation in JSX (fixable)

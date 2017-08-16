@@ -1,9 +1,4 @@
 module.exports = {
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
     "extends": [
         "./browser-babel.js",
         "./rules/plugins/react.js",

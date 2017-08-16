@@ -1,9 +1,4 @@
 module.exports = {
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
     "extends": [
         "./typescript.js",
         "./rules/plugins/react.js",
