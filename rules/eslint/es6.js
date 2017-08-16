@@ -2,10 +2,6 @@ module.exports = {
     "env": {
         "es6": true
     },
-    "parserOptions": {
-        "ecmaVersion": 8,
-        "sourceType": "module"
-    },
     "rules": {
         // require braces in arrow function body
         "arrow-body-style": 0,

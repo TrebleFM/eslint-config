@@ -2,6 +2,10 @@ module.exports = {
     "env": {
         "node": true
     },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
     "rules": {
         // enforce return after a callback
         "callback-return": 1,
