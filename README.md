@@ -24,7 +24,7 @@ The React configs additionally require:
 
 The TypeScript config additionally requires:
 - `eslint-plugin-typescript@0.5.x`
-- `typescript-eslint-parser@5.x`
+- `typescript-eslint-parser@6.x`
 - `typescript@2.4.x`
 
 By default, this config assumes a Node.js project using Babel and Flowtype.
