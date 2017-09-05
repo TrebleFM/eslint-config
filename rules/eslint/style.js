@@ -34,6 +34,8 @@ module.exports = {
         "func-names": 0,
         // enforces use of function declarations or expressions
         "func-style": 0,
+        // enforce consistent line breaks inside function parentheses
+        "function-paren-newline": 0,
         // disallow specified identifiers
         "id-blacklist": 0,
         // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
