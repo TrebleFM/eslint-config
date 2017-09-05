@@ -5,6 +5,7 @@ module.exports = {
         "./rules/eslint/es6.js",
         "./rules/eslint/strict.js",
         "./rules/eslint/style.js",
-        "./rules/eslint/variables.js"
+        "./rules/eslint/variables.js",
+        "./rules/plugins/graphql.js"
     ]
 };

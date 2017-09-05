@@ -13,6 +13,7 @@ You must also `npm install` the following peer dependencies:
 - `babel-eslint@7.x`
 - `eslint-plugin-babel@4.x`
 - `eslint-plugin-flowtype@2.x`
+- `eslint-plugin-graphql@1.x`
 - `eslint-plugin-node@5.x`
 
 The browser configs additionally require:
@@ -42,6 +43,40 @@ For Mocha tests
 ```json
 {
   "extends": "@treblefm/eslint-config/test"
+}
+```
+
+### GraphQL
+
+While this config provides support for GraphQL in all rulesets, the rules are disabled by default and some configuration is required.
+
+[`.graphqlconfig`](https://github.com/graphcool/graphql-config)
+```json
+{
+  "schemaPath": "./path/to/schema.json"
+}
+```
+
+Example `.eslintrc`
+```json
+{
+  "extends": "@treblefm",
+  "rules": {
+    "graphql/template-strings": [2, {
+      env: "apollo",
+      // validators: [/* see GraphQL's `specifiedRules` */]
+    }],
+    "graphql/named-operations": [2, {
+      env: "apollo"
+    }],
+    "graphql/required-fields": [2, {
+      env: "apollo",
+      requiredFields: ["id"]
+    }],
+    "graphql/capitalized-type-name": [2, {
+      env: "apollo"
+    }]
+  }
 }
 ```
 
