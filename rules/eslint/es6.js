@@ -22,7 +22,7 @@ module.exports = {
         // disallow duplicate name in class members
         "no-dupe-class-members": 2,
         // disallow duplicate module imports
-        "no-duplicate-imports": 2,
+        "no-duplicate-imports": 0,
         // disallow new operators with the Symbol object
         "no-new-symbol": 2,
         // disallow specified modules when loaded by import

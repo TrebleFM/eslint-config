@@ -14,6 +14,7 @@ You must also `npm install` the following peer dependencies:
 - `eslint-plugin-babel@4.x`
 - `eslint-plugin-flowtype@2.x`
 - `eslint-plugin-graphql@1.x`
+- `eslint-plugin-import@2.x`
 - `eslint-plugin-node@5.x`
 
 The browser configs additionally require:
@@ -23,12 +24,12 @@ The React configs additionally require:
 - `eslint-plugin-react@7.x`
 - `eslint-plugin-react-native@3.x`
 
-The TypeScript config additionally requires:
+The TypeScript configs additionally require:
 - `eslint-plugin-typescript@0.7.x`
 - `typescript-eslint-parser@7.x`
 - `typescript@2.4.x`
 
-By default, this config assumes a Node.js project using Babel and Flowtype.
+By default, this config assumes a Node.js project using Babel for ES2017+ support; Flowtype rules are enabled, but will only check annotated files.
 
 ## Usage
 
