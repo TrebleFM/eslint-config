@@ -1,6 +1,6 @@
 module.exports = {
+    "extends": "./default.js",
     "env": {
         "mocha": true
-    },
-    "extends": "./default.js"
+    }
 };
