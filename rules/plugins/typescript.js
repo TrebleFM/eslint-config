@@ -33,7 +33,6 @@ module.exports = {
         // TODO - Need to disable certain ESLint rules that cause issues until issue is fixed
         // https://github.com/eslint/typescript-eslint-parser/issues/77
         "no-undef": 0,
-        // "no-unused-vars": 0,
         "no-useless-constructor": 0
     }
 };

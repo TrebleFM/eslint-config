@@ -35,11 +35,11 @@ module.exports = {
         // disallow unnecessary parentheses
         "no-extra-parens": 0,
         // disallow unnecessary semicolons
-        "no-extra-semi": 2,
+        "no-extra-semi": 1,
         // disallow overwriting functions written as function declarations
         "no-func-assign": 2,
         // disallow function or variable declarations in nested blocks
-        "no-inner-declarations": [2, "functions"],
+        "no-inner-declarations": 2,
         // disallow invalid regular expression strings in the RegExp constructor
         "no-invalid-regexp": 2,
         // disallow irregular whitespace outside of strings and comments

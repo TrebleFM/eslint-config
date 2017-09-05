@@ -145,7 +145,7 @@ module.exports = {
         // enforce location of semicolons
         "semi-style": 2,
         // require or disallow use of semicolons instead of ASI
-        "semi": 2,
+        "semi": 0, // NOTE - DO NOT TOUCH. Use rule in babel.js
         // require object keys to be sorted
         "sort-keys": 0,
         // sort variables within the same declaration block
