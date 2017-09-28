@@ -16,6 +16,8 @@ module.exports = {
         "flowtype/no-primitive-constructor-types": 2,
         // disallows Flow type imports, exports, aliases, and annotations in files missing a valid Flow file declaration (or a @noflow annotation)
         "flowtype/no-types-missing-file-annotation": 2,
+        // An extension of ESLint's no-unused-expressions. This rule ignores type cast expressions, but otherwise behaves the same as ESLint's no-unused-expressions.
+        "flowtype/no-unused-expressions": 1,
         // warns against weak type annotations any, Object and Function
         "flowtype/no-weak-types": 1,
         // enforces consistent separators between properties in Flow object types

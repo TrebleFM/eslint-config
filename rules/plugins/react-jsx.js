@@ -43,6 +43,8 @@ module.exports = {
         "react/jsx-no-target-blank": 2,
         // Disallow undeclared variables in JSX
         "react/jsx-no-undef": [2, { "allowGlobals": true }],
+        // Enforce curly braces or disallow unnecessary curly braces in JSX
+        "react/jsx-curly-brace-presence": 1,
         // Enforce PascalCase for user-defined JSX components
         "react/jsx-pascal-case": 2,
         // Enforce props alphabetical sorting (fixable)
