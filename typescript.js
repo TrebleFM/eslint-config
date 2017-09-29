@@ -1,8 +1,11 @@
+"use strict";
+
+const include = require("./lib/include");
+include.register(module);
+
 module.exports = {
     "extends": [
-        "./baseline.js",
-        "./rules/eslint/node.js",
-        "./rules/plugins/node.js",
+        "./rules/plugins/react-jsx.js",
         "./rules/plugins/typescript.js"
     ]
 };

@@ -1,3 +1,5 @@
+"use strict";
+
 const restrictedGlobals = require("eslint-restricted-globals");
 
 module.exports = {

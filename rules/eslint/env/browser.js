@@ -1,10 +1,8 @@
+"use strict";
+
 module.exports = {
     "env": {
-        "node": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 8,
-        "sourceType": "module"
+        "browser": true
     },
     "rules": {
         // enforce return after a callback
@@ -22,12 +20,12 @@ module.exports = {
         // disallow string concatenation with __dirname and __filename
         "no-path-concat": 1,
         // disallow use of process.env
-        "no-process-env": 0,
+        "no-process-env": 2,
         // disallow process.exit()
-        "no-process-exit": 0,
+        "no-process-exit": 2,
         // restrict usage of specified node modules
         "no-restricted-modules": 0,
         // disallow use of synchronous methods (off by default)
-        "no-sync": [2, { allowAtRootLevel: true }]
+        "no-sync": 2
     }
 };

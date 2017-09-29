@@ -1,5 +1,12 @@
+"use strict";
+
 // Rules from eslint-plugin-react-native
 module.exports = {
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
     "plugins": ["react-native"],
     "rules": {
         // Detect StyleSheet rules which are not used in your React components

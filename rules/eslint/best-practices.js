@@ -1,4 +1,6 @@
-const MagicNumbers = require("../magic-numbers");
+"use strict";
+
+const MagicNumbers = require("../../lib/magic-numbers");
 
 module.exports = {
     "rules": {

@@ -1,3 +1,5 @@
+"use strict";
+
 module.exports = {
     "rules": {
         // enforce linebreaks after opening and before closing array brackets

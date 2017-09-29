@@ -1,6 +1,16 @@
+"use strict";
+
 // Rules from eslint-plugin-typescript
 module.exports = {
     "parser": "typescript-eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliedStrict": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
     "plugins": ["typescript"],
     "rules": {
         // enforces one space after the colon and zero spaces before the colon of a type annotation

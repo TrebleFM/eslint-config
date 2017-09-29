@@ -1,11 +1,8 @@
-// Modified version of ./node.js rules
+"use strict";
+
 module.exports = {
     "env": {
-        "browser": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "script"
+        "node": true
     },
     "rules": {
         // enforce return after a callback
@@ -23,12 +20,12 @@ module.exports = {
         // disallow string concatenation with __dirname and __filename
         "no-path-concat": 1,
         // disallow use of process.env
-        "no-process-env": 2,
+        "no-process-env": 0,
         // disallow process.exit()
-        "no-process-exit": 2,
+        "no-process-exit": 0,
         // restrict usage of specified node modules
         "no-restricted-modules": 0,
         // disallow use of synchronous methods (off by default)
-        "no-sync": 2
+        "no-sync": [2, { allowAtRootLevel: true }]
     }
 };

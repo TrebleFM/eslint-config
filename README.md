@@ -2,143 +2,107 @@
 
 Shared ESLint config for Treble.fm
 
-## Install
+## Quick Install
 
-```
-$ npm install @treblefm/eslint-config --save-dev
+(Copy/paste into your terminal)
+```sh
+npm install --save-dev \
+  @treblefm/eslint-config \
+  eslint@4 \
+  eslint-plugin-import@2 \
+  eslint-plugin-node@5
 ```
 
-You must also `npm install` the following peer dependencies:
+## Dependencies
+
+This config requires the following peer dependencies:
 - `eslint@4.x` (obviously)
-- `babel-eslint@7.x`
-- `eslint-plugin-babel@4.x`
-- `eslint-plugin-flowtype@2.x`
-- `eslint-plugin-graphql@1.x`
 - `eslint-plugin-import@2.x`
 - `eslint-plugin-node@5.x`
 
-The browser configs additionally require:
+Additionally, these optional peer dependencies will automatically be used if installed:
+- `eslint-plugin-graphql@1.x` <sup>1</sup>
 - `eslint-plugin-html@3.x`
+- `eslint-plugin-react@7.x` <sup>2</sup>
+- `eslint-plugin-react-native@3.x` <sup>3</sup>
+- `eslint-plugin-typescript@0.7.x` <sup>4</sup>
+- `typescript@2.5.x` <sup>4</sup>
+- `typescript-eslint-parser@8` <sup>4</sup>
 
-The React configs additionally require:
-- `eslint-plugin-react@7.x`
-- `eslint-plugin-react-native@3.x`
+<sub>
+1: See additional notes below<br />
+2: JSX parsing and related rules are only enabled in the React Native and TypeScript configs<br />
+3: Required by the React Native config<br />
+4: Required by the TypeScript config
+</sub>
 
-The TypeScript configs additionally require:
-- `eslint-plugin-typescript@0.7.x`
-- `typescript-eslint-parser@7.x`
-- `typescript@2.4.x`
-
-By default, this config assumes a Node.js project using Babel for ES2017+ support; Flowtype rules are enabled, but will only check annotated files.
+-------------------
 
 ## Usage
 
-`.eslintrc`
-```json
+By default, this config assumes a Node.js project with ES2017 syntax (though unsupported features will be reported as errors by `eslint-plugin-node`):
+```json5
 {
   "extends": "@treblefm"
 }
 ```
 
-For Mocha tests
-```json
-{
-  "extends": "@treblefm/eslint-config/test"
-}
-```
-
-### GraphQL
-
-While this config provides support for GraphQL in all rulesets, the rules are disabled by default and some configuration is required.
-
-[`.graphqlconfig`](https://github.com/graphcool/graphql-config)
-```json
-{
-  "schemaPath": "./path/to/schema.json"
-}
-```
-
-Example `.eslintrc`
-```json
-{
-  "extends": "@treblefm",
-  "rules": {
-    "graphql/template-strings": [2, {
-      env: "apollo",
-      // validators: [/* see GraphQL's `specifiedRules` */]
-    }],
-    "graphql/named-operations": [2, {
-      env: "apollo"
-    }],
-    "graphql/required-fields": [2, {
-      env: "apollo",
-      requiredFields: ["id"]
-    }],
-    "graphql/capitalized-type-name": [2, {
-      env: "apollo"
-    }]
-  }
-}
-```
-
-### Browsers
-
-For browsers (ES5)
-```json
+Browser (ES6):
+```json5
 {
   "extends": "@treblefm/eslint-config/browser"
 }
 ```
 
-For browsers via Babel
-```json
+React Native:
+```json5
 {
-  "extends": "@treblefm/eslint-config/browser-babel"
+  "extends": "@treblefm/eslint-config/react-native"
 }
 ```
 
-### React
-
-For server-side React
-```json
+TypeScript support can be added to any of the above configs:
+```json5
 {
-  "extends": "@treblefm/eslint-config/react"
+  "extends": [
+    "@treblefm",
+    "@treblefm/eslint-config/typescript"
+  ]
 }
 ```
 
-For client-side React via Babel
-```json
+-------------------
+
+## Note about GraphQL
+
+While GraphQL is supported, the rules are disabled by default and some configuration is required ([click here for more info](https://github.com/apollographql/eslint-plugin-graphql)).
+
+[`.graphqlconfig`](https://github.com/graphcool/graphql-config)
+```json5
 {
-  "extends": "@treblefm/eslint-config/browser-react"
+  "schemaPath": "./path/to/schema.json"
 }
 ```
 
-### TypeScript ([experimental](https://github.com/eslint/typescript-eslint-parser))
-
-For TypeScript
-```json
+`.eslintrc`
+```json5
 {
-  "extends": "@treblefm/eslint-config/typescript"
-}
-```
-
-For browsers via TypeScript
-```json
-{
-  "extends": "@treblefm/eslint-config/typescript-browser"
-}
-```
-
-For server-side React via TypeScript
-```json
-{
-  "extends": "@treblefm/eslint-config/typescript-react"
-}
-```
-
-For client-side React via TypeScript
-```json
-{
-  "extends": "@treblefm/eslint-config/typescript-browser-react"
+  "extends": "@treblefm",
+  "rules": {
+    "graphql/template-strings": [2, {
+      "env": "apollo",
+      // "validators": [/* see GraphQL's `specifiedRules` */]
+    }],
+    "graphql/named-operations": [2, {
+      "env": "apollo"
+    }],
+    "graphql/required-fields": [2, {
+      "env": "apollo",
+      "requiredFields": ["id"]
+    }],
+    "graphql/capitalized-type-name": [2, {
+      "env": "apollo"
+    }]
+  }
 }
 ```

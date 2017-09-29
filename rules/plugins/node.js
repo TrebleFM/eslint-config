@@ -1,3 +1,5 @@
+"use strict";
+
 // Rules from eslint-plugin-node
 module.exports = {
     "plugins": ["node"],

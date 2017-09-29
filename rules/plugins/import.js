@@ -1,6 +1,15 @@
+"use strict";
+
 // Rules from eslint-plugin-import
 module.exports = {
     "plugins": ["import"],
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
     "rules": {
         /* Static Analysis */
         // Ensure imports point to a file/module that can be resolved
@@ -38,7 +47,7 @@ module.exports = {
 
         /* Module Systems */
         // Report potentially ambiguous parse goal (script vs. module)
-        "import/unambiguous": 1,
+        "import/unambiguous": 0,
         // Report CommonJS require calls and module.exports or exports.*
         "import/no-commonjs": 0,
         // Report AMD require and define calls
@@ -86,7 +95,7 @@ module.exports = {
             "typescript-eslint-parser": [".ts", ".tsx"]
         }
         // https://github.com/benmosher/eslint-plugin-import#resolvers
-        // "import/resolver": [],
+        // "import/resolver": {},
         // https://github.com/benmosher/eslint-plugin-import#importcache
         // "import/cache": { "lifetime": 30 }
     }
