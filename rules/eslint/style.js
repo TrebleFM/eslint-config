@@ -58,6 +58,8 @@ module.exports = {
         "linebreak-style": 0,
         // enforces empty lines around comments
         "lines-around-comment": 0,
+        // require or disallow an empty line between class members
+        "lines-between-class-members": [1, "always", { "exceptAfterSingleLine": true }],
         // specify the maximum depth that blocks can be nested
         "max-depth": [1, 4],
         // specify the maximum length of a line in your program
@@ -72,6 +74,8 @@ module.exports = {
         "max-statements-per-line": 0,
         // specify the maximum number of statement allowed in a function
         "max-statements": 0,
+        // enforce a particular style for multiline comments
+        "multiline-comment-style": 0,
         // enforce newlines between operands of ternary expressions
         "multiline-ternary": [1, "always-multiline"],
         // require a capital letter for constructors
