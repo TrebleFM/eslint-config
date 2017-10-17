@@ -25,7 +25,7 @@ Additionally, these optional peer dependencies will automatically be used if ins
 - `eslint-plugin-html@3.x`
 - `eslint-plugin-react@7.x` <sup>2</sup>
 - `eslint-plugin-react-native@3.x` <sup>3</sup>
-- `eslint-plugin-typescript@0.7.x` <sup>4</sup>
+- `eslint-plugin-typescript@0.8.x` <sup>4</sup>
 - `typescript@2.5.x` <sup>4</sup>
 - `typescript-eslint-parser@8` <sup>4</sup>
 
