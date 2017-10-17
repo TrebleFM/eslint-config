@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "codependency": "^2.0.1",
-    "eslint-restricted-globals": "^0.1.1"
+    "eslint-restricted-globals": "^0.1.1",
+    "find-root": "^1.1.0"
   },
   "devDependencies": {
     "eslint": "^4.9.0",

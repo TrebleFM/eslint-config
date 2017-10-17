@@ -1,7 +1,6 @@
 "use strict";
 
-const include = require("./lib/include");
-include.register(module);
+require("./lib/include");
 
 module.exports = {
     "extends": [
