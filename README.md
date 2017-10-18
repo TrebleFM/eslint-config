@@ -54,14 +54,26 @@ Browser (ES6):
 }
 ```
 
-React Native:
+React Native (includes JSX support):
 ```js
 {
   "extends": "@treblefm/eslint-config/react-native"
 }
 ```
 
-TypeScript support can be added to any of the above configs:
+-------------------
+
+JSX support can be added to any of the above configs:
+```js
+{
+  "extends": [
+    "@treblefm",
+    "@treblefm/eslint-config/jsx"
+  ]
+}
+```
+
+Similarly, TypeScript support can also be added (includes JSX support):
 ```js
 {
   "extends": [
