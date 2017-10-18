@@ -17,21 +17,23 @@ npm install --save-dev \
 
 This config requires the following peer dependencies:
 - `eslint@4.x` (obviously)
+- `eslint-import-resolver-react-native@0.1.x` <sup>1</sup>
+- `eslint-import-resolver-typescript@1.x` <sup>1</sup>
 - `eslint-plugin-import@2.x`
 - `eslint-plugin-node@5.x`
 
 Additionally, these optional peer dependencies will automatically be used if installed:
-- `eslint-plugin-graphql@1.x` <sup>1</sup>
+- `eslint-plugin-graphql@1.x` <sup>2</sup>
 - `eslint-plugin-html@3.x`
-- `eslint-plugin-react@7.x` <sup>2</sup>
+- `eslint-plugin-react@7.x`
 - `eslint-plugin-react-native@3.x` <sup>3</sup>
 - `eslint-plugin-typescript@0.8.x` <sup>4</sup>
 - `typescript@2.5.x` <sup>4</sup>
 - `typescript-eslint-parser@8` <sup>4</sup>
 
 <sub>
-1: See additional notes below<br />
-2: JSX parsing and related rules are only enabled in the React Native and TypeScript configs<br />
+1: Required even if you aren't using React Native or TypeScript
+2: See additional GraphQL notes below<br />
 3: Required by the React Native config<br />
 4: Required by the TypeScript config
 </sub>

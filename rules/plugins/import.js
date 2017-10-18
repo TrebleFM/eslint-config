@@ -93,9 +93,13 @@ module.exports = {
         // A map from parsers to file extension arrays. If a file extension is matched, the dependency parser will require and use the map key as the parser instead of the configured ESLint parser
         "import/parsers": {
             "typescript-eslint-parser": [".ts", ".tsx"]
-        }
+        },
         // https://github.com/benmosher/eslint-plugin-import#resolvers
-        // "import/resolver": {},
+        "import/resolver": {
+            "node": true,
+            "eslint-import-resolver-typescript": true,
+            "react-native": { "platform": "any" }
+        }
         // https://github.com/benmosher/eslint-plugin-import#importcache
         // "import/cache": { "lifetime": 30 }
     }

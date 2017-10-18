@@ -33,6 +33,8 @@
   },
   "peerDependencies": {
     "eslint": "4.x",
+    "eslint-import-resolver-react-native": "0.1.x",
+    "eslint-import-resolver-typescript": "1.x",
     "eslint-plugin-import": "2.x",
     "eslint-plugin-node": "5.x"
   }
