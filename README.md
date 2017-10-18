@@ -41,28 +41,28 @@ Additionally, these optional peer dependencies will automatically be used if ins
 ## Usage
 
 By default, this config assumes a Node.js project with ES2017 syntax (though unsupported features will be reported as errors by `eslint-plugin-node`):
-```json5
+```js
 {
-  "extends": "@treblefm"
+  "extends": "@treblefm" // or @treblefm/eslint-config/node
 }
 ```
 
 Browser (ES6):
-```json5
+```js
 {
   "extends": "@treblefm/eslint-config/browser"
 }
 ```
 
 React Native:
-```json5
+```js
 {
   "extends": "@treblefm/eslint-config/react-native"
 }
 ```
 
 TypeScript support can be added to any of the above configs:
-```json5
+```js
 {
   "extends": [
     "@treblefm",
@@ -78,14 +78,14 @@ TypeScript support can be added to any of the above configs:
 While GraphQL is supported, the rules are disabled by default and some configuration is required ([click here for more info](https://github.com/apollographql/eslint-plugin-graphql)).
 
 [`.graphqlconfig`](https://github.com/graphcool/graphql-config)
-```json5
+```js
 {
   "schemaPath": "./path/to/schema.json"
 }
 ```
 
 `.eslintrc`
-```json5
+```js
 {
   "extends": "@treblefm",
   "rules": {
