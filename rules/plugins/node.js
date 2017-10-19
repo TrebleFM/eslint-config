@@ -27,6 +27,6 @@ module.exports = {
         // Make the same code path as throw at process.exit()
         "node/process-exit-as-throw": 2,
         // Suggest correct usage of shebang
-        "node/shebang": 2
+        "node/shebang": 0
     }
 };
