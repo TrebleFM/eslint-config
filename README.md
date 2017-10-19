@@ -9,6 +9,8 @@ Shared ESLint config for Treble.fm
 npm install --save-dev \
   @treblefm/eslint-config \
   eslint@4 \
+  eslint-import-resolver-react-native@0.1 \
+  eslint-import-resolver-typescript@1 \
   eslint-plugin-import@2 \
   eslint-plugin-node@5
 ```
