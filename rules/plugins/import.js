@@ -83,7 +83,7 @@ module.exports = {
     },
     "settings": {
         // A list of file extensions that will be parsed as modules and inspected for exports
-        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"],
         // A list of regex strings that, if matched by a path, will not report the matching module if no exports are found
         // "import/ignore": [],
         // An array of additional modules to consider as "core" modules - modules that should be considered resolved but have no path on the filesystem
@@ -97,8 +97,12 @@ module.exports = {
         // https://github.com/benmosher/eslint-plugin-import#resolvers
         "import/resolver": {
             "node": true,
-            "eslint-import-resolver-typescript": true,
-            "react-native": { "platform": "any" }
+            "eslint-import-resolver-typescript": {
+                "extensions": [".ts", ".tsx", ".d.ts"]
+            },
+            "react-native": {
+                "platform": "any"
+            }
         }
         // https://github.com/benmosher/eslint-plugin-import#importcache
         // "import/cache": { "lifetime": 30 }
