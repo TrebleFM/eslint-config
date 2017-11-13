@@ -26,12 +26,12 @@ This config requires the following peer dependencies:
 
 Additionally, these optional peer dependencies will automatically be used if installed:
 - `eslint-plugin-graphql@1.x` <sup>2</sup>
-- `eslint-plugin-html@3.x`
+- `eslint-plugin-html@4.x`
 - `eslint-plugin-react@7.x`
 - `eslint-plugin-react-native@3.x` <sup>3</sup>
 - `eslint-plugin-typescript@0.8.x` <sup>4</sup>
-- `typescript@2.5.x` <sup>4</sup>
-- `typescript-eslint-parser@8` <sup>4</sup>
+- `typescript@2.x` <sup>4</sup>
+- `typescript-eslint-parser@9.x` <sup>4</sup>
 
 <sub>
 1: Required even if you aren't using React Native or TypeScript
