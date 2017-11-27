@@ -49,6 +49,8 @@ if (react) {
             "react/jsx-no-target-blank": 2,
             // Disallow undeclared variables in JSX
             "react/jsx-no-undef": [2, { "allowGlobals": true }],
+            // Limit to one expression per line in JSX
+            "react/jsx-one-expression-per-line": 0,
             // Enforce curly braces or disallow unnecessary curly braces in JSX
             "react/jsx-curly-brace-presence": 1,
             // Enforce PascalCase for user-defined JSX components

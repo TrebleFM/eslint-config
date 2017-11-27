@@ -10,8 +10,12 @@ if (react) {
         "rules": {
             // Enforces consistent naming for boolean props
             "react/boolean-prop-naming": 1,
+            // Forbid "button" element without an explicit "type" attribute
+            "react/button-has-type": 2,
             // Prevent extraneous defaultProps on components
             "react/default-props-match-prop-types": 2,
+            // Rule enforces consistent usage of destructuring assignment in component
+            "react/destructuring-assignment": 0,
             // Prevent missing displayName in a React component definition
             "react/display-name": 1,
             // Forbid certain props on Components
@@ -22,6 +26,8 @@ if (react) {
             "react/forbid-prop-types": 0,
             // Forbid foreign propTypes
             "react/forbid-foreign-prop-types": 2,
+            // Prevent using this.state inside this.setState
+            "react/no-access-state-in-setstate": 2,
             // Prevent using Array index in key props
             "react/no-array-index-key": 2,
             // Prevent passing children as props
