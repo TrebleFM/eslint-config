@@ -12,7 +12,7 @@
   },
   "main": "node.js",
   "scripts": {
-    "test": "eslint '**/*.js'"
+    "test": "eslint '**/*.js' --report-unused-disable-directives"
   },
   "dependencies": {
     "codependency": "^2.0.1",
