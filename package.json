@@ -20,7 +20,7 @@
     "find-root": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.12.0",
+    "eslint": "^4.13.1",
     "eslint-import-resolver-react-native": "^0.1.0",
     "eslint-import-resolver-typescript": "^1.0.2",
     "eslint-plugin-graphql": "^1.4.1",
@@ -31,7 +31,7 @@
     "eslint-plugin-react-native": "^3.2.0",
     "eslint-plugin-typescript": "^0.8.1",
     "typescript": "^2.6.2",
-    "typescript-eslint-parser": "^9.0.0"
+    "typescript-eslint-parser": "^11.0.0"
   },
   "peerDependencies": {
     "eslint": "4.x",

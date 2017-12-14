@@ -31,7 +31,7 @@ Additionally, these optional peer dependencies will automatically be used if ins
 - `eslint-plugin-react-native@3.x` <sup>3</sup>
 - `eslint-plugin-typescript@0.8.x` <sup>4</sup>
 - `typescript@2.x` <sup>4</sup>
-- `typescript-eslint-parser@9.x` <sup>4</sup>
+- `typescript-eslint-parser@11.x` <sup>4</sup>
 
 <sub>
 1: Required even if you aren't using React Native or TypeScript
