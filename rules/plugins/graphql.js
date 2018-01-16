@@ -29,6 +29,11 @@ if (graphql) {
             "graphql/capitalized-type-name": [0, {
                 // env,
                 // schemaJson
+            }],
+            // validates that no deprecated fields are part of the query (useful to discover fields that have been marked as deprecated and shouldn't be used)
+            "graphql/no-deprecated-fields": [0, {
+                // env,
+                // schemaJson
             }]
         }
     };
